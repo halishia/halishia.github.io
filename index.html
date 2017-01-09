@@ -33,11 +33,11 @@
 	   
 	   $("#name").click(function() {
 	    $(this).css(
-	    	"font-size", "250%"
+	    	"font-size", "100%"
 	    	);
-		$("#1").css("cursor", "default");
-	   	$("h1").fadeIn(2000);
-	   	$("h2").fadeIn(4000);
+		$("h1").css("cursor", "default");
+	   	$("#1").fadeIn(2000);
+	   	$("#2").fadeIn(4000);
 	   	$(".navigation").fadeIn(3000);
 	   });
 	   $("#animate").hover(function() {
@@ -50,13 +50,13 @@
 	</script>
 
 	<body style="background-color: powderblue;">
-	 
-	 <h1 style="font-family:courier;" id="name"> halishia chugani 
-	 </h1>
- 	 <h2 style="font-family:courier;"><span id="animate">HONG KONG</span> | NEW YORK
+	
+	<div class="text-container">	 
+	 <h1 style="font-family:courier;" id="name"> halishia chugani </h1>
+ 	 <h2 style="font-family:courier;" id="1"> COLUMBIA CS | PREMED</h2>
+	 <h2 style="font-family:courier;" id="2"><span id="animate">HONG KONG</span> | NEW YORK
 	 </h2>
-
-	 <div class="text-container"> 
+ 
 	  <nav>
 		<a class="navigation" href="mailto:hsc2137@columbia.edu?Subject=Hi Halishia!" target="_top"><i class="fa fa-envelope"></i></a>
 		<a class="navigation" href="https://www.linkedin.com/pub/halishia"><i class="fa fa-linkedin"></i></a>
