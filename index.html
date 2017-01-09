@@ -1,1 +1,73 @@
-hello world
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+      <title>justin bleuel</title>
+    <!-- animate.css provided by https://daneden.github.io/animate.css/ -->
+    <link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="new.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="scripts.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+	<script>
+ 	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-66538102-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	</head>
+	
+
+	<script>
+
+	$(document).ready(function(){  
+		$("h1").css("cursor", "default");
+	   	$("#1").fadeIn(2000);
+	   	$("#2").addClass('animated fadeInDownBig');
+	   	$("#3").fadeIn(4500);
+	   	
+	   $("#animate").hover(function() {
+	   	$(this).addClass('animated swing').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+	   	function() {
+	   		$(this).removeClass('animated swing');
+	   	});
+	   });
+	   
+	   $("#dance").hover(function() {
+	   $(this).addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+	   	function() {
+	   		$(this).removeClass('animated pulse');
+	   	 });
+	   	});
+	 });  
+	</script>
+
+	<body>
+   	        
+<div class="homepage-hero-module">
+    <div class="video-container">
+    <!-- video provided by https://coverr.co/ -->
+        <video autoplay loop class="fillWidth">
+            <source src="Ristretto/Ristretto.mp4" type="video/mp4" />
+            <source src="Ristretto/Ristretto.webm" type="video/webm" />
+        </video> 
+     	<div class="poster hidden">
+            <img src="stars.png" alt="">
+        </div>
+    </div>
+     <div class="text-container">
+      <p id="1">I no longer update this site <span id="animate"><i class="fa fa-frown-o"></i></span> visit</p>
+      <p id="2"><a id="dance" href="http://justinbleuel.github.io">justinbleuel.github.io</a></p>
+      <p id="3">for my personal page!</p>
+	</div>
+</div>
+
+	</body>
+</html>
+
