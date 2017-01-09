@@ -5,8 +5,49 @@
 	 <meta name="author" content="Halishia Chugani">
 	 <eta name="keywords" content="Halishia, Chugani, Columbia, University,
 	 Computer Science, Programming"/>
+<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="new.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="scripts.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script>
+ 	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-66538102-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 	</head>
 	
+	<script>
+
+	$(document).ready(function(){  
+	   $("#1, #2, .navigation").hide();
+	   
+	   $('#name').addClass('animated fadeInDownBig');
+	   
+	   $("#name").click(function() {
+	    $(this).css(
+	    	"font-size", "250%"
+	    	);
+		$("h1").css("cursor", "default");
+	   	$("#1").fadeIn(2000);
+	   	$("#2").fadeIn(4000);
+	   	$(".navigation").fadeIn(5000);
+	   });
+	   $("#animate").hover(function() {
+	   	$(this).addClass('animated swing').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', 
+	   	function() {
+	   		$(this).removeClass('animated swing');
+	   	});
+	   });
+	 });  
+	</script>
+
 	<body style="background-color: powderblue;">
 	 <h1 style="font-family:courier;"> halishia chugani </h1>
  	 <h2 style="font-family:courier;">
